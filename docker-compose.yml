@@ -10,6 +10,10 @@ services:
       --ui-interface 0.0.0.0
       --unsafe-expose   
       --jsonrpc-cors all
+      --geth
+      --jsonrpc-server-threads 8
+      --tx-queue-size 16536
+      --scale-verifiers
     volumes:
       - ./parity/config:/parity/config:ro
       - authority0:/root/.local/share/io.parity.ethereum/
