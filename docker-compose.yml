@@ -11,8 +11,8 @@ services:
       --unsafe-expose   
       --jsonrpc-cors all
       --geth
-      --jsonrpc-server-threads 8
-      --tx-queue-size 16536
+      --jsonrpc-server-threads 20
+      --tx-queue-size 20001
     volumes:
       - ./parity/config:/parity/config:ro
       - authority0:/root/.local/share/io.parity.ethereum/
